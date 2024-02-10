@@ -4,7 +4,7 @@ export default function Player() {
   // const [submitted, setSubmitted] = useState(false);
 
   const playerName = useRef();
-  console.log(playerName);
+  // console.log(playerName);
 
   // function handleChange(event) {
   //   setSubmitted(false);
@@ -13,9 +13,7 @@ export default function Player() {
 
   function handleClick() {
     setEnteredPlayer(playerName.current.value);
-    if (!playerName.current.value ) {
-      return "";
-    }
+    playerName.current.value = "";
   }
   return (
     <section id="player">
